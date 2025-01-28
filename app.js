@@ -1,5 +1,6 @@
 // El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
 let listaAmigos = [];
+let minimoParticipantes = 3;
 const reg = new RegExp(/([0-9])|\W/g);
 
 
@@ -16,8 +17,14 @@ function agregarAmigo(){
 
 // funcion que sortea a los amigos seleccionados 
 function sortearAmigo(){
-    let numeroSorteo =  Math.floor(Math.random()*listaAmigos.length);
-    console.log(listaAmigos[numeroSorteo]);
+    if (parseInt(listaAmigos.length) >= minimoParticipantes) {
+        let ganador = document.getElementById('resultado');
+        let numeroSorteo =  Math.floor(Math.random()*listaAmigos.length);
+        ganador.innerHTML = listaAmigos[numeroSorteo];
+        //console.log(listaAmigos[numeroSorteo]);
+    }else{
+        alert(`El numero minimo de participantes, es de ${minimoParticipantes} amigos, ${(parseInt(listaAmigos.length) === 1) ? `solo faltan ${Math.abs(listaAmigos.length - minimoParticipantes)} amigos más para iniciar el juego` : `solo falta ${Math.abs(listaAmigos.length - minimoParticipantes)} amigo más para inciar el juego` }`)
+    };
 };
 
 // funcion revisa las expresiones regulare para determinar si el texto ingresado no es simbolo - espacios o numeros
