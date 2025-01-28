@@ -13,11 +13,12 @@ function agregarAmigo(){
     listarAmigos('listaAmigos',nombreAgregado);
 };
 
-// Funcion se encarga de borrar el textbox del cuadro de Nonbre ingresado.
-function borrarinputs(){
-    document.querySelector('#amigo').value = '';
-};
 
+// funcion que sortea a los amigos seleccionados 
+function sortearAmigo(){
+    let numeroSorteo =  Math.floor(Math.random()*listaAmigos.length);
+    console.log(listaAmigos[numeroSorteo]);
+};
 
 // funcion revisa las expresiones regulare para determinar si el texto ingresado no es simbolo - espacios o numeros
 function validaTexto(textoIngresado){
@@ -37,4 +38,8 @@ function listarAmigos(elemento, texto) {
     return;
 };
 
+// Funcion se encarga de borrar el textbox del cuadro de Nonbre ingresado.
+function borrarinputs(){
+    document.querySelector('#amigo').value = '';
+};
 
