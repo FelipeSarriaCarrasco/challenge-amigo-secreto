@@ -7,8 +7,7 @@ let listaAmigos = [];
 // funcion que se encarga de agregar los nombres de los amigos, al array.
 function agregarAmigo(){
     let nombreAgregado = document.getElementById('amigo').value;
-    (validaEntradasTexto(nombreAgregado) == true ? listaAmigos.push(nombreAgregado) : alert('Debe ingresar un numero valido'));
-    //listaAmigos.push(nombreAgregado); // se guardan los nombre de los amigos en el Array
+    (validaEntradasTexto(nombreAgregado) == true ? listaAmigos.push(nombreAgregado) : alert('Debe ingresar un nombre válido'));
     borrarinputs();
     console.log(listaAmigos);
 };
@@ -23,7 +22,7 @@ function borrarinputs(){
 function validaEntradasTexto(textoIngresado){
     let valorResultado = false
     for (let tx = 0; tx < textoIngresado.length; tx++) {
-        let elemento = textoIngresado.charAt(tx); // se extare cada caracter de izquier a derecha
+        let elemento = textoIngresado.charAt(tx); // se extare cada caracter de izquierda a derecha
 
         // charCodeAt() devuelve el valor ASCII del caracter
         // los numeros ASCII entre el 65 y 90 corresponden a las letras Mayusculas
@@ -38,3 +37,4 @@ function validaEntradasTexto(textoIngresado){
     }
     return valorResultado;
 };
+
