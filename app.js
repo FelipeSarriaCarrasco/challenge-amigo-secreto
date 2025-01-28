@@ -1,5 +1,6 @@
 // El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
 let listaAmigos = [];
+const reg = new RegExp(/([0-9])|\W/g);
 
 
 
@@ -7,6 +8,7 @@ let listaAmigos = [];
 // funcion que se encarga de agregar los nombres de los amigos, al array.
 function agregarAmigo(){
     let nombreAgregado = document.getElementById('amigo').value;
+    validaTexto(nombreAgregado)
     (validaEntradasTexto(nombreAgregado) == true ? listaAmigos.push(nombreAgregado) : alert('Debe ingresar un nombre válido'));
     borrarinputs();
     console.log(listaAmigos);
@@ -18,23 +20,15 @@ function borrarinputs(){
 };
 
 
-// funcion se encarga de verificar los caracteres del texto ingresado mediante el valor ASCII que posee cada valor
-function validaEntradasTexto(textoIngresado){
+// funcion revisa las expresiones regulare para determinar si el texto ingresado no es simbolo - espacios o numeros
+function validaTexto(textoIngresado){
     let valorResultado = false
-    for (let tx = 0; tx < textoIngresado.length; tx++) {
-        let elemento = textoIngresado.charAt(tx); // se extare cada caracter de izquierda a derecha
-
-        // charCodeAt() devuelve el valor ASCII del caracter
-        // los numeros ASCII entre el 65 y 90 corresponden a las letras Mayusculas
-        // los numero ASCII entre el 97 y 122 corresponden a las letras Minusculas
-        if (elemento.charCodeAt(0) >= 65 && elemento.charCodeAt(0) <= 90) {
-            valorResultado = true
-        }else if (elemento.charCodeAt(0) >= 97 && elemento.charCodeAt(0) <= 122) {
-            valorResultado = true
-        }else{
-            return false
-        }
+    if (reg.test(textoIngresado)) {
+        return false
+        //console. log(`Error codigo: ${textoIngresado} el error ${reg.test(textoIngresado)}`);
+    }else if (!reg.test(textoIngresado)) {
+        return true
+        //console. log(`Codigo correcto: ${textoIngresado} esta bien ${reg.test(textoIngresado)}`);
     }
-    return valorResultado;
 };
 
