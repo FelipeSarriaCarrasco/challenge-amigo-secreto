@@ -1,7 +1,7 @@
 // El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
 let listaAmigos = [];
 let minimoParticipantes = 3;
-const reg = new RegExp(/([0-9])|\W/g);
+const reg = new RegExp(/([0-9])|\W/g); // expresion regular que busca inclur a datos numericos, espacios y simbolos
 
 
 
