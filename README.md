@@ -1,7 +1,7 @@
 <h1 align="center">Hola 👋, soy Felipe Sarria</h1>
 <h3 align="center">PROYECTO JUEGO AMIGO SECRETO</h3>
 
-  <h3 align="center" href= "https://www.aluracursos.com"><img align="center" src= "https://github.com/user-attachments/assets/e8ac3be6-b98c-4769-9c47-f27386205ebb" alt="https://www.aluracursos.com"/></h3>
+ <h3 align="center"><a align="center" href="https://aluracursos.com"><img align="center" src="https://github.com/user-attachments/assets/e8ac3be6-b98c-4769-9c47-f27386205ebb"/></a></h3>
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
