@@ -1,8 +1,9 @@
 <h1 align="center">Hola 👋, soy Felipe Sarria</h1>
 <h3 align="center">PROYECTO JUEGO AMIGO SECRETO</h3>
 
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)            <h3 align="center" href= "https://www.aluracursos.com/"> ![image](https://github.com/user-attachments/assets/e8ac3be6-b98c-4769-9c47-f27386205ebb)</h3>
+  <h3 align="center" href= "https://www.aluracursos.com"><img align="center" src= "https://github.com/user-attachments/assets/e8ac3be6-b98c-4769-9c47-f27386205ebb" alt="https://www.aluracursos.com"/></h3>
 
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
 
 - 🔭 Esta aplicación web permite agregar amigos para un juego aleatorio seleccionando a un ganador. Los participantes son ingresados y almacenados en un listado. Que posteriormente, una función de selección aleatoria elige a uno de los participantes como ganador. [challenge-amigo-secreto](https://github.com/FelipeSarriaCarrasco/challenge-amigo-secreto)
